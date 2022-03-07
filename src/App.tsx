@@ -1,5 +1,9 @@
 import "./App.css";
 import { useMemo } from "react";
+import splash from './homelogo.png';
+import roadmap from './roadmap.jpg';
+import preview from './preview.png';
+import anatomy from './anatomy.png';
 
 import Minter from "./Minter";
 
@@ -19,7 +23,7 @@ import {
 } from "@solana/wallet-adapter-react";
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
-import { ThemeProvider, createTheme } from "@material-ui/core";
+import { ThemeProvider, createTheme} from "@material-ui/core";
 
 const theme = createTheme({
   palette: {
@@ -67,34 +71,11 @@ const App = () => {
         </div>
         <ul>
           <li>
-            <img className="mobile-nav-logo" src="/img/logo.png" alt="" />
-          </li>
-          <li>
-            <a href="/#link1" onClick={toggleMenu}>
-              Link 1
-            </a>
-          </li>
-          <li>
-            <a href="/#link2" onClick={toggleMenu}>
-              Link 2
-            </a>
-          </li>
-          <li>
-            <a href="/#link3" onClick={toggleMenu}>
-              Link 3
-            </a>
-          </li>
-          <li>
-            <a href="/#link4" onClick={toggleMenu}>
-              Link 4
-            </a>
-          </li>
-          <li>
             <div className="social-icons">
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
+              <a href="https://twitter.com/tojibaceo" target="_blank" rel="noreferrer">
                 <img className="nav-social" src="/icons/twitter.svg" alt="" />
               </a>
-              <a href="https://discord.com" target="_blank" rel="noreferrer">
+              <a href="https://discord.gg/NuUDNKkgXX" target="_blank" rel="noreferrer">
                 <img className="nav-social" src="/icons/discord.svg" alt="" />
               </a>
             </div>
@@ -104,43 +85,18 @@ const App = () => {
       <div className="mobile-menu-button" onClick={toggleMenu}>
         <img src="/icons/menu.svg" alt="" />
       </div>
-      <nav>
-        <div className="nav-container">
-          <img className="nav-logo" src="/img/logo.png" alt="" />
-          <a className="hide-800" href="/#link1">
-            Link 1
-          </a>
-          <a className="hide-800" href="/#link2">
-            Link 2
-          </a>
-          <a className="hide-800" href="/#link3">
-            Link 3
-          </a>
-          <a className="hide-800" href="/#link4">
-            Link 4
-          </a>
-          <div className="social-icons hide-800">
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <img className="nav-social" src="/icons/twitter.svg" alt="" />
-            </a>
-            <a href="https://discord.com" target="_blank" rel="noreferrer">
-              <img className="nav-social" src="/icons/discord.svg" alt="" />
-            </a>
-          </div>
-        </div>
-      </nav>
       <div className="content-wrapper">
         <header className="card" id="link1">
           <div style={{ padding: "0 24px 0 24px 0" }}>
-            <h3 className="text-secondary-color">Welcome To</h3>
-            <h1 className="pb-3">The Boiler Plate</h1>
+            
             <p className="text-secondary-color">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              scelerisque ipsum non est porta mollis. Donec sapien sapien,
-              dictum eget enim sed, hendrerit semper orci. Donec ante magna,
-              consequat at eros ac, eleifend dictum sem. Nam vitae condimentum
-              lorem. Vestibulum molestie dui turpis, tincidunt porta sem congue
-              nec.
+            <p>Supply=2222  Price=0.22 Solana</p>
+            <img  src={splash} alt="splash" className="imagess"/>
+<p>Here you can mint a unique Toji 100 Personal Computer from the Tojiba CPU Corporation.</p>
+<p>Tojiba is your link to the World Wide Web!</p> 
+<p>Treat it kindly and it will take you places you could have never imagined!</p> 
+<p>Remember to own as many personal computers as possible!</p>
+<p>Visit us on <a href="https://twitter.com/tojibaceo" target="_blank" rel="noreferrer">Twitter</a> or  <a href="https://discord.gg/NuUDNKkgXX" target="_blank" rel="noreferrer">Discord</a> for more info!</p>
             </p>
           </div>
           <div>
@@ -161,61 +117,14 @@ const App = () => {
             </ThemeProvider>
           </div>
         </header>
-
+ 
         <div id="link2" className="container">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac velit
-          aliquet, semper sapien sed, ornare augue. Phasellus sed velit
-          interdum, sagittis metus quis, facilisis lectus. Cras sollicitudin
-          purus at magna eleifend maximus. Nulla nec nulla in nunc maximus
-          viverra in at mauris. Fusce sodales dolor nisi, et vehicula orci porta
-          id. In placerat nunc sed erat lacinia tincidunt. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Vestibulum commodo eget metus
-          vitae tempus. Aliquam pharetra mi at efficitur accumsan. Curabitur
-          venenatis libero a ex porttitor, at auctor turpis hendrerit. Nam
-          commodo, risus non consequat pretium, erat ante auctor purus, a cursus
-          dolor erat at velit. Maecenas dignissim, dolor sed laoreet aliquam,
-          tortor lacus faucibus urna, eget mattis massa sem ac dui. Nam semper
-          hendrerit interdum. Etiam at dictum nisi.
-        </div>
-
-        <div id="link3" className="container card">
-          <h1 className="pb-3">Lorem ipsum</h1>
-        </div>
-
-        <div id="link4" className="container faq">
-          <h1 style={{ padding: "0 0 24px 0" }}>FAQ</h1>
-          <div>
-            <h4>Lorem ipsum?</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse id metus id mauris tincidunt posuere. Vivamus neque
-              odio, imperdiet vitae.
-            </p>
-
-            <hr />
-          </div>
-
-          <div>
-            <h4>Lorem ipsum?</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse id metus id mauris tincidunt posuere. Vivamus neque
-              odio, imperdiet vitae.
-            </p>
-
-            <hr />
-          </div>
-
-          <div>
-            <h4>Lorem ipsum?</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse id metus id mauris tincidunt posuere. Vivamus neque
-              odio, imperdiet vitae.
-            </p>
-
-            <hr />
-          </div>
+        <p className="text-secondary-color">Preview</p>
+        <img src={preview} alt="preview" className="images"/>
+        <p className="text-secondary-color">Anatomy</p>
+        <img  src={anatomy} alt="anatomy" className="images"/>
+        <p className="text-secondary-color">Roadmap</p>
+        <img  src={roadmap} alt="roadmap" className="images"/>
         </div>
       </div>
     </div>
